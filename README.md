@@ -11,6 +11,6 @@ The creation of this project was divided into 3 steps:
 
 ## Author
 
-Zambe04 (https://github.com/Zambe04/zambe04.timer)
+Zambe04
 
 ![image](https://github.com/Zambe04/zambe04.timer/assets/153844832/8e764849-8f65-43c3-afde-1f3ee1cb458a)

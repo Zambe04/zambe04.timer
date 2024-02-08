@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right, rgb(177, 255, 177), rgb(48, 206, 48) );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -7,7 +7,6 @@
 
 body{
     background: linear-gradient(to right, rgb(177, 255, 177), rgb(48, 206, 48) );
-    height: 100hv;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +20,7 @@ div.timer{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 div.number{
@@ -30,14 +29,14 @@ div.number{
 
 .buttons{
     margin-top: 50px;
-    width: 400px;
+    width: 650px;
     display: flex;
     justify-content: space-between;
 }
 
 .button{
-    width: 10rem;
-    height: 6rem;
+    width: 17rem;
+    height: 13rem;
     border: none;
     border-radius: 20px;
     font-size: 3em;
@@ -48,4 +47,20 @@ div.number{
 
 button:hover{
     background-color: rgb(81, 85, 87);
+}
+
+@media only screen and (max-width: 425px){
+
+    div.timer{
+        width: 300px;
+        height: 300px;
+    }
+
+    .buttons{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 500px;
+        justify-content: space-around;
+    }
+
 }

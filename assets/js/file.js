@@ -1,25 +1,23 @@
 //creazione dei buttons
-
 let buttons = document.getElementsByClassName('buttons')[0];
-const newBtnLess = document.createElement('button');
-const newBtnPlus = document.createElement('button')
 
-newBtnPlus.textContent = "+";
-newBtnLess.textContent = "-";
-newBtnPlus.classList.add("button");
-newBtnLess.classList.add("button");
+function createElement(tagName, textContent, className){
 
-buttons.appendChild(newBtnLess);
-buttons.appendChild(newBtnPlus);
+    const newElement = document.createElement(tagName);
+    newElement.textContent = textContent;
+    newElement.classList.add(className);
+    buttons.appendChild(newElement);
+    return newElement;
+};
+
+const btnLess = createElement("button", "-", "button");
+const btnPlus = createElement("button", "+", "button");
 
 //creo il counter e la funzione che incrementa il timer
 
-const number = document.createElement('div');
-number.classList.add('number');
+const number = createElement("div", "", "number");
 document.querySelector('.timer').appendChild(number);
 let counter = 0;
-
-//in questo modo ho una funzione più versatile
 
 function timerIncrease(amount){
     counter += amount;
